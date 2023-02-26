@@ -7,7 +7,7 @@ Feature: Validation of resources creation of social network website for posts an
     Examples:
       | user | title | body       |
       | 1    | Test  | Test body1 |
-
+      
   Scenario Outline: Validate and create new Comment on post on the social network website
     Given Authorized "<user>" request for Comment on post on social network website
     When Authorized user given valid "<postId>","<name>" and "<email>" for creation of Comment on post
